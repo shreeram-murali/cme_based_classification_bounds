@@ -1,6 +1,6 @@
 '''
-MNIST classification bounds from the paper "Frequentist bounds for multi-class classification,"
-submitted to Advances in Neural Information Processing Systems, 2022.
+MNIST classification bounds from the paper "Safe reinforcement learning in uncertain contexts" by 
+Dominik Baumann and Thomas B. Schön, published in the IEEE Transactions on Robotics, 2024.
 '''
 
 from torchvision import datasets, transforms
