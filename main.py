@@ -66,7 +66,7 @@ while len(tested) < 10:
         test = x_test[idx, :].reshape(1, -1)
         val, epsilon = context_conf_int(x_train, test, y, K, gamma=gamma)
         val_st[idx_2] = val 
-        epsilon_st[idx_2] = epsilon
+        epsilon_st[idx_2] = epsilon.item()
         idx_2 += 1
     idx += 1
 
