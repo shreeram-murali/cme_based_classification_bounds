@@ -72,6 +72,8 @@ while len(tested) < 10:
 
 def plot_conf_int(ax, x, y, conf):
     ax.set_ylim([-0.5, 1.1])
+    ax.set_xlabel(r"digits")
+    ax.set_ylabel(r"$\hat{p}$")
     for loc, val, bound in zip(x, y, conf):
         ax.plot([loc, loc], [val - bound, val + bound], color='gray')
         ax.plot([loc - 0.25, loc + 0.25], [bound + val, bound + val], color='gray')
